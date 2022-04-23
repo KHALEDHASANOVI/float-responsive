@@ -14,13 +14,22 @@
 .row {
   margin-left: -15px;
   margin-right: -15px;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 .row::after {
   display: table;
   content: "";
   clear: both;
+}
+
+[class^="column-sm-"],
+[class^="column-md-"],
+[class^="column-lg-"],
+[class^="column-xl-"],
+[class^="column-xxl-"] {
+           position: relative;
+           min-height: 1px;
+           padding-right: 15px;
+           padding-left: 15px;
 }
 
 @media screen and (min-width: 576px) {
